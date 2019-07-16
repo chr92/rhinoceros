@@ -1,0 +1,37 @@
+// Styling for the masthead
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  // replace the masthead.jpg image in the /img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  background: linear-gradient(to bottom, #{fade-out($brown, .6)} 0%,#{fade-out($brown, .6)} 100%), url('../img/bg-masthead.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h1 {
+    font-family: 'lunaregular';
+    color: $orange;
+    text-shadow: 0.1rem -0.2rem #1C4D7D;
+    font-size: 3rem;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 5rem;
+      text-shadow: 0.2rem -0.4rem #1C4D7D;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 6rem;
+      text-shadow: 0.3rem -0.5rem #1C4D7D;
+    }
+  }
+}
