@@ -35,3 +35,7 @@ header.masthead {
     }
   }
 }
+
+header.corporate {
+  background: linear-gradient(to bottom, #{fade-out($brown, .6)} 0%,#{fade-out($brown, .6)} 100%), url('../img/corporate.jpg');
+}

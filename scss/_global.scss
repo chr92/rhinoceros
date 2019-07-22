@@ -45,5 +45,19 @@ hr.light {
 
 // Page section padding
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 8rem 0;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'lunaregular';
+  color: white;
+  line-height: 1.8em;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+.red {
+  color: #DB3932
 }
