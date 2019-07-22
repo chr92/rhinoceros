@@ -10602,7 +10602,13 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
+}
+
+@media (min-width: 992px) {
+  .page-section {
+    padding: 8rem 0;
+  }
 }
 
 #mainNav {
@@ -10754,4 +10760,26 @@ header.corporate {
 
 .about-text h3 {
   padding-bottom: 1em;
+}
+
+#eventbrite {
+  background-color: #343a40;
+  color: white;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+}
+
+#testimonial {
+  padding: 6rem 0;
+}
+
+#testimonial .header {
+  padding-bottom: 1em;
+}
+
+#testimonial .testimonial {
+  background: black;
+  padding: 1em;
+  margin: 1.5em 1em 1.5em 1em;
+  border-radius: 1em;
+  height: 100%;
 }
