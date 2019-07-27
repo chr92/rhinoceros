@@ -10727,6 +10727,10 @@ header.masthead h1 {
   font-size: 2.5rem;
 }
 
+header.masthead .title {
+  padding-bottom: 6em;
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -10741,6 +10745,9 @@ header.masthead h1 {
     font-size: 5rem;
     text-shadow: 0.2rem -0.4rem #1C4D7D;
   }
+  header.masthead .title {
+    padding-bottom: 12em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -10748,15 +10755,25 @@ header.masthead h1 {
     font-size: 6rem;
     text-shadow: 0.3rem -0.5rem #1C4D7D;
   }
+  header.masthead .title {
+    padding-bottom: 12em;
+  }
 }
 
 header.corporate {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.4)), to(rgba(92, 77, 66, 0.4))), url("../img/corporate.jpg");
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.4) 100%), url("../img/corporate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .team-pic {
   width: 200px;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .team-title {
